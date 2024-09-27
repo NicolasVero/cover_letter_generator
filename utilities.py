@@ -12,9 +12,12 @@ def get_personnal_information_section():
 
 def get_text_section():
     return (
-        
-        "Je suis particulièrement intéressé par les opportunités de développement au sein de votre entreprise, et je suis convaincu    que mes compétences en ... pourraient être un atout pour votre équipe."
-        + GREETINGS
+        "Madame, Monsieur, " +
+        "Récemment diplômé en BUT MMI de l'IUT de Rouen, je vous adresse ma candidature [spontaneous] poste de [job] au sein de votre entreprise." + 
+        "Je suis particulièrement intéressé par les opportunités de développement au sein de votre entreprise, et je suis convaincu que mes compétences en [main_skills] pourraient être un atout pour votre équipe." + 
+        DUT_INFO +
+        GITHUB +
+        GREETINGS
     )
 
 
