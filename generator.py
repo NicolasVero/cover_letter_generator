@@ -8,7 +8,6 @@ def generate_pdf(props):
     if not os.path.exists(SAVE_PATH):
         os.makedirs(SAVE_PATH)
 
-
     pdf = FPDF("P", "mm", "A4")
     #! a voir pourquoi ne semble pas changer le pdf final 
     # pdf.set_auto_page_break(auto=True)
