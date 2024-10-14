@@ -1,3 +1,6 @@
+# OS
+SAVE_PATH = "./documents"
+
 # Personnal informations
 LASTNAME = "Veroooo"
 FIRSTNAME = "Nicolas"

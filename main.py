@@ -1,6 +1,11 @@
 from fpdf import FPDF
 from datas import *
 from utilities import *
+import os
+
+
+if not os.path.exists(SAVE_PATH):
+    os.makedirs(SAVE_PATH)
 
 
 company = input("Entreprise :")
@@ -51,7 +56,9 @@ corps = get_text_section(props)
 pdf.multi_cell(0, 10, corps)
 
 pdf.cell(0, 10, "Nicolas Vero")
-pdf.output(formate_company_name(company) + ".pdf")
+
+pdf_filename = os.path.join(SAVE_PATH, formate_company_name(company) + ".pdf")
+pdf.output(pdf_filename)
 
 
 print(formate_company_name(company))
