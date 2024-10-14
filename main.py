@@ -1,18 +1,12 @@
-import os
-from fpdf import FPDF
-from datas import *
-from utilities import *
 from generator import *
 
 
-company = input("Entreprise :")
-spontaneous = input("Is spontaneous ? (y, '' / n) : :")
-job = input("Job :")
-main_skills = input("Main skills (separator ,) :")
+company          = input("Entreprise :")
+spontaneous      = input("Is spontaneous ? (y, '' / n) : :")
+job              = input("Job :")
+main_skills      = input("Main skills (separator ,) :")
 display_dut_info = input("Display DUT Info ? (y, '' / n) :")
-
-if display_dut_info in ['', 'y']:
-    dut_info_skills = input("DUT Info skills (separator ,) :")
+dut_info_skills  = input("DUT Info skills (separator ,) :") if display_dut_info in ['', 'y'] else None
 
 
 generate_pdf({
@@ -21,5 +15,5 @@ generate_pdf({
     "job" : job,
     "main_skills" : main_skills,
     "display_dut_info" : display_dut_info,
-    "dut_info_skills" : dut_info_skills if 'dut_info_skills' in globals() else None
+    "dut_info_skills" : dut_info_skills
 })

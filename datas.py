@@ -2,7 +2,7 @@
 SAVE_PATH = "./documents"
 
 # Personnal informations
-LASTNAME = "Veroooo"
+LASTNAME = "Vero"
 FIRSTNAME = "Nicolas"
 ADRESS = "52 rue Lemoine, Sotteville-lès-Rouen"
 PHONE = "06 51 15 16 80"
