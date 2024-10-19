@@ -1,7 +1,7 @@
 # OS
 SAVE_PATH = "./documents"
 
-# Personnal informations
+# Personal informations
 LASTNAME = "Vero"
 FIRSTNAME = "Nicolas"
 ADRESS = "52 rue Lemoine, Sotteville-lès-Rouen"

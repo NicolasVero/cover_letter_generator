@@ -19,7 +19,7 @@ def generate_pdf(props):
 
     pdf.set_xy(10, 10)
 
-    text = get_personnal_information_section()
+    text = get_personal_information_section()
 
     # pdf.multi_cell(0, 10, text)
     pdf.multi_cell(0, 10, text)

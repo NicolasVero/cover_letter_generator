@@ -2,12 +2,13 @@ import re
 from datas import *
 
 
-def get_personnal_information_section():
+def get_personal_information_section():
     return SPACE.join([LASTNAME + " " + FIRSTNAME, ADRESS, PHONE, EMAIL]) + SPACE
 
 
 def get_text_section(props):
     return replaces_text_props(
+        OBJECT + SPACE +
         "Madame, Monsieur, " + SPACE + 
         "Récemment diplômé en BUT MMI de l'IUT de Rouen, je vous adresse ma candidature [spontaneous] poste de [job] au sein de votre entreprise. " + SPACE +
         "Mes connaissances en développement, en particulier en [main_skills], ainsi que mon expérience en développement de sites et d'applications web m'ont permis d'acquérir des compétences techniques solides. " +
