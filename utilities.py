@@ -3,7 +3,7 @@ from datas import *
 
 
 def get_personal_information_section():
-    return SPACE.join([LASTNAME + " " + FIRSTNAME, ADRESS, PHONE, EMAIL]) + SPACE
+    return SPACE.join([FULLNAME, ADRESS, PHONE, EMAIL]) + SPACE
 
 def get_subject(spontaneous, job):
     subject = SPONTANEOUS_SUBJECT if spontaneous in ['', 'y'] else NOT_SPONTANEOUS_SUBJECT
