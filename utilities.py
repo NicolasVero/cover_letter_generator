@@ -11,12 +11,12 @@ def get_object(spontaneous, job):
 
 def get_text_section(props):
     return replaces_text_props(
-        "Madame, Monsieur, " + SPACE + 
-        "Récemment diplômé en BUT MMI de l'IUT de Rouen, je vous adresse ma candidature [spontaneous] poste de [job] au sein de votre entreprise. " + SPACE +
+        "Madame, Monsieur, " + DOUBLE_SPACE + 
+        "Récemment diplômé en BUT MMI de l'IUT de Rouen, je vous adresse ma candidature [spontaneous] poste de [job] au sein de votre entreprise. " + DOUBLE_SPACE +
         "Mes connaissances en développement, en particulier en [main_skills], ainsi que mon expérience en développement de sites et d'applications web m'ont permis d'acquérir des compétences techniques solides. " +
         "[dut_info]" +
-        GITHUB + SPACE +
-        GREETINGS + SPACE
+        GITHUB + DOUBLE_SPACE +
+        GREETINGS + DOUBLE_SPACE
     , props)
 
 
