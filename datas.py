@@ -11,7 +11,8 @@ EMAIL = "nicolasvero03@gmail.com"
 # Style 
 LINE_HEIGHT = 19
 SECTION_MARGIN_BLOCK = 16
-FONT_FAMILY = "Helvetica"
+FONT_FAMILY = "Montserrat"
+FONT_SIZE = 11
 SPACE = "\n"
 DOUBLE_SPACE = "\n \n"
 
