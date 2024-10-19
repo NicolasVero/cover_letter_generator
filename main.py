@@ -13,8 +13,8 @@ company = 'test'
 spontaneous = 'y'
 job = 'test'
 main_skills = 'test'
-display_dut_info = 'n'
-dut_info_skills = None
+display_dut_info = 'y'
+dut_info_skills = 'test,test2'
 
 generate_pdf({
     "company" : company,
