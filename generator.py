@@ -9,6 +9,7 @@ def generate_pdf(props):
         os.makedirs(SAVE_PATH)
 
     pdf = FPDF("P", "mm", "A4")
+    # pdf.set_margin(4)
     #! a voir pourquoi ne semble pas changer le pdf final 
     # pdf.set_auto_page_break(auto=True)
     pdf.set_auto_page_break(auto=True, margin=15)
@@ -27,6 +28,8 @@ def generate_pdf(props):
 
     pdf.set_font(FONT_FAMILY, "B", 12)
     # pdf.cell(0, 10, OBJECT, ln=LINE_HEIGHT)
+
+    pdf.multi_cell(0, 10, get_object(props.get("spontaneous"), props.get("job")))
 
     pdf.set_font(FONT_FAMILY, size=12)
 
