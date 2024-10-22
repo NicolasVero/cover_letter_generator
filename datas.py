@@ -20,6 +20,8 @@ FONT_FAMILY = "Montserrat"
 FONT_SIZE = 11
 SPACE = "\n"
 DOUBLE_SPACE = "\n \n"
+PDF_COLOR = [254, 251, 234]
+PDF_SIZE = [0, 0, 210, 297, 'F']
 
 # Text
 SPONTANEOUS_SUBJECT = "Objet : candidature spontanée au poste de [job]"

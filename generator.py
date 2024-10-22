@@ -7,6 +7,11 @@ def generate_pdf(props):
 
     pdf = initialize_pdf()
 
+    pdf.image("./images/profile.jpg", x=MARGIN, y=MARGIN, w=30, h=30)
+    pdf.ln(50)
+
+
+
     change_font(pdf, "")
     pdf.multi_cell(0, LINE_HEIGHT, get_personal_information_section())
 
@@ -37,8 +42,8 @@ def initialize_pdf():
     pdf.set_margin(MARGIN)
     pdf.add_page()
     
-    pdf.set_fill_color(254, 251, 234)
-    pdf.rect(0, 0, 210, 297, 'F')
+    # pdf.set_fill_color(254, 251, 234)
+    # pdf.rect(0, 0, 210, 297, 'F')
     return pdf
 
 
