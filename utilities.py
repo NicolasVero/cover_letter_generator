@@ -7,6 +7,7 @@ def get_personal_information_section():
 
 def get_subject(spontaneous, job):
     subject = SPONTANEOUS_SUBJECT if spontaneous in ['', 'y'] else NOT_SPONTANEOUS_SUBJECT
+    job = job[0].lower() + job[1:]
     return subject.replace("[job]", job) + SPACE
 
 def get_text_section(props):
