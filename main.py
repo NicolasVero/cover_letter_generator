@@ -13,7 +13,7 @@ company = 'Neoma Business School'
 spontaneous = 'n'
 job = 'Développeur web spécialisé LMS'
 main_skills = 'JavaScript,PHP,Drupal'
-display_dut_info = 'y'
+display_dut_info = 'n'
 dut_info_skills = 'Java,C'
 
 generate_pdf({
