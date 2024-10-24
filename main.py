@@ -9,12 +9,12 @@ from generator import *
 
 
 #! test
-company = 'test'
-spontaneous = 'y'
-job = 'test'
-main_skills = 'test'
+company = 'Neoma Business School'
+spontaneous = 'n'
+job = 'Développeur web spécialisé LMS'
+main_skills = 'JavaScript,PHP,Drupal'
 display_dut_info = 'y'
-dut_info_skills = 'test,test2'
+dut_info_skills = 'Java,C'
 
 generate_pdf({
     "company" : company,

@@ -8,18 +8,22 @@ def generate_pdf(props):
     pdf = initialize_pdf()
 
 
-    pdf.image("./images/profile.png", x=MARGIN, y=MARGIN, w=40, h=40)
+    pdf.image("./images/profile.png", x=MARGIN + 2, y=MARGIN + 2, w=36, h=36)
+    pdf.ellipse(MARGIN, MARGIN, 40, 40)
+
 
     change_font(pdf, "B", font_size=30)
 
-    pdf.set_xy(MARGIN + 50, MARGIN)
-    pdf.cell(0, LINE_HEIGHT, FIRSTNAME)
-    pdf.set_xy(MARGIN + 50, MARGIN + 10)
-    pdf.cell(0, LINE_HEIGHT, LASTNAME)
-    pdf.set_xy(MARGIN + 50, MARGIN + 20)
+    pdf.set_xy(MARGIN + 50, MARGIN + 5)
+    pdf.cell(0, LINE_HEIGHT, FIRSTNAME.upper())
+    pdf.set_xy(MARGIN + 50, MARGIN + 16)
+    pdf.cell(0, LINE_HEIGHT, LASTNAME.upper())
+    pdf.set_xy(MARGIN + 50, MARGIN + 30)
+
+    change_font(pdf, "B", font_size=15)
     pdf.cell(0, LINE_HEIGHT, props.get("job"))
     pdf.ln(50)
-    pdf.rect(MARGIN + 50, MARGIN + 30, 100, 2)
+    pdf.rect(MARGIN + 50, MARGIN + 38, 100, 1, "F")
 
 
     change_font(pdf, "")
