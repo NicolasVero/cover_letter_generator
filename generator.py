@@ -8,7 +8,7 @@ def generate_pdf(props):
     pdf = initialize_pdf()
 
 
-    pdf.image("./images/profile.png", x=MARGIN + 2, y=MARGIN + 2, w=36, h=36)
+    pdf.image("./medias/images/profile.png", x=MARGIN + 2, y=MARGIN + 2, w=36, h=36)
     pdf.ellipse(MARGIN, MARGIN, 40, 40)
 
 
@@ -23,18 +23,34 @@ def generate_pdf(props):
     change_font(pdf, "B", font_size=15)
     pdf.cell(0, LINE_HEIGHT, props.get("job"))
     pdf.ln(50)
-    pdf.rect(MARGIN + 50, MARGIN + 38, 100, 1, "F")
-
+    pdf.rect(MARGIN + 50, MARGIN + 38, 110, 0.6, "F")
 
     change_font(pdf, "")
-    pdf.multi_cell(0, LINE_HEIGHT, get_personal_information_section())
+    
+    pdf.image("./medias/icons/phone.png", x=MARGIN + 50, y=MARGIN + 42, w=3, h=3)
+    pdf.set_xy(MARGIN + 54, MARGIN + 41)
+    pdf.cell(0, LINE_HEIGHT, PHONE)
 
-    change_font(pdf, "I")
-    pdf.multi_cell(0, LINE_HEIGHT, props.get("company"), align='R')
-    pdf.ln(3)
+    pdf.image("./medias/icons/email.png", x=MARGIN + 100, y=MARGIN + 42, w=3.5, h=3)
+    pdf.set_xy(MARGIN + 104.5, MARGIN + 40.5)
+    pdf.cell(0, LINE_HEIGHT, EMAIL)
 
+    pdf.image("./medias/icons/adress.png", x=MARGIN + 50, y=MARGIN + 48, w=3, h=4)
+    pdf.set_xy(MARGIN + 54, MARGIN + 47)
+    pdf.cell(0, LINE_HEIGHT, ADRESS)
+    
+
+    pdf.set_xy(MARGIN, MARGIN + 60)
     change_font(pdf, "B")
-    pdf.multi_cell(0, LINE_HEIGHT, get_subject(props.get("spontaneous"), props.get("job"))) 
+    pdf.cell(0, LINE_HEIGHT, get_subject(props.get("spontaneous"), props.get("job")))
+
+    pdf.set_xy(MARGIN, MARGIN + 66)
+    change_font(pdf, "")
+    pdf.cell(0, LINE_HEIGHT, props.get("company"))
+
+    pdf.set_fill_color(89, 88, 96)
+    pdf.rect(MARGIN + 1, MARGIN + 77, 160, 0.1, "F")
+    pdf.ln(20)
 
     change_font(pdf, "")
     pdf.multi_cell(0, LINE_HEIGHT, get_text_section(props), align='L')
