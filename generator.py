@@ -7,9 +7,19 @@ def generate_pdf(props):
 
     pdf = initialize_pdf()
 
-    pdf.image("./images/profile.jpg", x=MARGIN, y=MARGIN, w=30, h=30)
-    pdf.ln(50)
 
+    pdf.image("./images/profile.png", x=MARGIN, y=MARGIN, w=40, h=40)
+
+    change_font(pdf, "B", font_size=30)
+
+    pdf.set_xy(MARGIN + 50, MARGIN)
+    pdf.cell(0, LINE_HEIGHT, FIRSTNAME)
+    pdf.set_xy(MARGIN + 50, MARGIN + 10)
+    pdf.cell(0, LINE_HEIGHT, LASTNAME)
+    pdf.set_xy(MARGIN + 50, MARGIN + 20)
+    pdf.cell(0, LINE_HEIGHT, props.get("job"))
+    pdf.ln(50)
+    pdf.rect(MARGIN + 50, MARGIN + 30, 100, 2)
 
 
     change_font(pdf, "")
@@ -29,7 +39,6 @@ def generate_pdf(props):
     pdf.cell(0, 0, FULLNAME)
 
     save_pdf(pdf, props.get("company"))
-
 
 
 def initialize_pdf():
