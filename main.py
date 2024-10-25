@@ -9,7 +9,7 @@ from generator import *
 
 
 #! test
-company = 'Neoma Business School'
+company = 'Neoma Business Schoole'
 spontaneous = 'n'
 job = 'Développeur web spécialisé LMS'
 main_skills = 'JavaScript,PHP,Drupal,WP'

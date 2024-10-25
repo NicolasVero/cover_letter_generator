@@ -1,8 +1,8 @@
 import os 
 from fpdf import FPDF
-from header import *
-from body import *
-from footer import *
+from components.header import *
+from components.body import *
+from components.footer import *
 from utilities import * 
 from datas import *
 
