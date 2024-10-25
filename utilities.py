@@ -55,3 +55,7 @@ def formate_company_name(company):
     company = re.sub(r"[^a-zA-Z0-9\s]", "", company)
     company = company.lower().replace(" ", "_")
     return company
+
+
+def change_font(pdf, decoration = "", font_family = FONT_FAMILY, font_size = FONT_SIZE):
+    pdf.set_font(font_family, decoration, font_size)
