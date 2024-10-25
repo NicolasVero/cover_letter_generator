@@ -1,20 +1,11 @@
 from generator import *
 
-# company          = input("Enterprise :")
-# spontaneous      = input("Is spontaneous ? (y, '' / n) : :")
-# job              = input("Job :")
-# main_skills      = input("Main skills (separator ,) :")
-# display_dut_info = input("Display DUT Info ? (y, '' / n) :")
-# dut_info_skills  = input("DUT Info skills (separator ,) :") if display_dut_info in ['', 'y'] else None
-
-
-#! test
-company = 'Neoma Business Schoole'
-spontaneous = 'n'
-job = 'Développeur web spécialisé LMS'
-main_skills = 'JavaScript,PHP,Drupal,WP'
-display_dut_info = ''
-dut_info_skills = 'Java,C'
+company          = input("Enterprise :")
+spontaneous      = input("Is spontaneous ? (y, '' / n) : :")
+job              = input("Job :")
+main_skills      = input("Main skills (separator ,) :")
+display_dut_info = input("Display DUT Info ? (y, '' / n) :")
+dut_info_skills  = input("DUT Info skills (separator ,) :") if display_dut_info in ['', 'y'] else None
 
 generate_pdf({
     "company" : company,

@@ -10,6 +10,8 @@ def get_subject(spontaneous, job):
 
 def get_list_into_string(list):
 
+    if(list == None): return ""
+
     elements = [element.strip() for element in list.split(",") if element.strip()]
 
     if len(elements) == 1:
@@ -29,3 +31,7 @@ def formate_company_name(company):
 
 def change_font(pdf, decoration = "", font_family = FONT_FAMILY, font_size = FONT_SIZE):
     pdf.set_font(font_family, decoration, font_size)
+
+
+# def add_space(pdf, double=True):
+#     pdf.ln(3)
