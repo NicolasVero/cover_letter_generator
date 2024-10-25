@@ -1,3 +1,4 @@
 *.pdf
 
-documents
+documents/
+__pycache__/
