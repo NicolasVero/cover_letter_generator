@@ -12,8 +12,8 @@ from generator import *
 company = 'Neoma Business School'
 spontaneous = 'n'
 job = 'Développeur web spécialisé LMS'
-main_skills = 'JavaScript,PHP,Drupal'
-display_dut_info = 'n'
+main_skills = 'JavaScript,PHP,Drupal,WP'
+display_dut_info = ''
 dut_info_skills = 'Java,C'
 
 generate_pdf({

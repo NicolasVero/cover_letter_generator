@@ -1,8 +1,8 @@
 import os 
+from fpdf import FPDF
 from header import *
 from body import *
 from footer import *
-from fpdf import FPDF
 from utilities import * 
 from datas import *
 
@@ -27,8 +27,8 @@ def initialize_pdf():
     pdf.set_margin(MARGIN)
     pdf.add_page()
     
-    # pdf.set_fill_color(254, 251, 234)
-    # pdf.rect(0, 0, 210, 297, 'F')
+    pdf.set_fill_color(PDF_COLOR[0], PDF_COLOR[1], PDF_COLOR[2])
+    pdf.rect(0, 0, 210, 297, 'F')
     return pdf
 
 
